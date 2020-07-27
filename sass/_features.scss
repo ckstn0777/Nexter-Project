@@ -4,7 +4,29 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  // minmax(25rem, 1fr) : 25rem 아래로 떨어지면 auto-fit 됨. 25rem보다 클때는 1fr 치수를 따름
+  // auto-fill과 auto-fit 차이. auto-fill은 남는 공간 유지. auto-fit은 남는 공간을 축소
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
-  // grid-template-rows: auto auto;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
 }
