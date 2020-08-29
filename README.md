@@ -1,5 +1,5 @@
 # Nexter-Project
-Udemy Advanced CSS and Sass: Flexbox, Grid, Animations and More! 강의 공부내용 2탄
+Udemy Advanced CSS and Sass: Flexbox, Grid, Animations and More! 강의 공부내용 3탄
 
 ### 기술 스택
 - HTML5
@@ -7,7 +7,7 @@ Udemy Advanced CSS and Sass: Flexbox, Grid, Animations and More! 강의 공부�
 - SCSS
 - CSS BEM 방식
 - 반응형 디자인
-- FlexLayout을 주로 사용
+- Grid Layout 주로 사용
 
 ### 실행방법
 1. visual studio code 실행
